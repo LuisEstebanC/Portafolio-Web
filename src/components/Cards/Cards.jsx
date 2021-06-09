@@ -1,18 +1,14 @@
 import React,{Component} from 'react';
-import imgPlaceHolder from '../../assets/images/imgPlaceHolder.png';
-import imgPlaceHolder2 from '../../assets/images/placeholder-image2.webp';
 import {CardsItem} from './CardsItems';
 
 
 import Card from './CardsUI';
 
-class Cards extends Component{
-    render(){
-       
-
+function Cards (){
+   
         return(
                 <div>
-                     <div className="container">
+                    <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 <div className='common3'>
@@ -26,20 +22,14 @@ class Cards extends Component{
                                     {CardsItem.map((item, index) => {
                                         return (
                                             <div className="card" key={index}>
-                                                <Card imgsrc={item.img} title={item.title} description={item.description} url={item.urlButton}/>
+                                                <Card imgsrc={item.img} title={item.title} description={item.description} url={item.urlButton} alt={item.imageAlt} classNames={item.Style}/>
                                             </div>
                                         )
-                                    })} 
-                                    
-                                    
+                                    })}
                             </div>
-                           
                         </div>
                 </div>
-               
-        
-           
         );
-    }
+    
 }
 export default Cards;

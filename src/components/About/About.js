@@ -10,17 +10,22 @@ const About = () => {
         <div className="About">
             <div className="container">
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 col-md-6">
                         <div className="common">
-                        <h1 className="mainHeader">{header.subHeader}</h1>
-                        <p className="mainContent">{header.text}</p>
-                        <div className="commonBorder"></div>
+                            <h1 className="mainHeader">{header.subHeader}</h1>
+                            <p className="mainContent">{header.text}</p>
+                            <div className="commonBorder"></div>
+                        </div>
                     </div>
+                    <div className="col-12 col-md-6">
+                        <div className="common">
+                            <h1 className="mainHeader">{header.subHeader}</h1>
+                            <p className="mainContent">{header.text}</p>
+                            <div className="commonBorder"></div>
+                        </div>
                     </div>
                 </div>
-                
             </div>
-           
         </div>
     )
 }

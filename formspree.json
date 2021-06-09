@@ -1,0 +1,14 @@
+{
+    "forms": {
+        "contact": {
+            "name": "form",
+            "fields": {
+                "email": { "type": "email", "required": true },
+                "message": { "type": "text", "required": true }
+            },
+            "actions": [
+                { "type": "email", "to": "ing2.29capellan@gmail.com" }
+            ]
+        }
+    }
+}

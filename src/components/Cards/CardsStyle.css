@@ -47,7 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
     background: #f2f0f0;
     background-attachment: fixed;
 }
@@ -55,7 +55,7 @@
 .containerr {
     position: relative;
     width: fit-content;
-    padding: 55px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,9 +75,9 @@
 }
 
 .containerr:hover .card {
-    filter: blur(2px);
+    filter: blur(0px);
     transform: scale(0.9);
-    opacity: 1;
+    opacity: 9;
 }
 
 .containerr .card:hover {
@@ -88,10 +88,17 @@
 
 .containerr .card .circle {
     position: relative;
-    width: 105%;
+    width: 100%;
     height: 100%;
     background: #fff;
     clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.containerr .card .square {
+    position: relative;
+    width: 105%;
+    height: 100%;
     text-align: center;
 }
 
@@ -104,14 +111,16 @@
 
 .containerr .card .contentC p {
     color: #666;
-    font-size: 15px;
+    font-size: 13px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .containerr .card .contentC a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    background: #28B463;
+    background: #B73225;
     color: #fff;
     border-radius: 40px;
     text-decoration: none;
@@ -119,7 +128,7 @@
 }
 
 .containerr .card .contentC a:hover {
-    background: #2eeb7c;
+    background: #e97586;
     color: #fff;
 }
 
@@ -164,5 +173,5 @@ ul.collapsible>li {
 }
 
 .mainHeader2 {
-    padding-top: 14%;
+    padding-top: 3%;
 }

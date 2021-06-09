@@ -1,22 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import Cookies from 'universal-cookie';
 import './Navbar.css';
-import { useHistory } from "react-router-dom";
 import {
-    BrowserRouter as Router, 
+    BrowserRouter as Router,
     Link
-  } from "react-router-dom";
+    } from "react-router-dom";
 import { Button } from './Button';
 
 
 
 
 function Navbar(props) {
-
-   
-   
-    
-
 
         const [click, setClick] = useState(false);
         const [button, setButton] = useState(true)
@@ -34,22 +27,21 @@ function Navbar(props) {
 
         useEffect(()=>{
             showButton()
+            return () =>{
+                window.removeEventListener('resize', showButton);
+            }
         }, []);
-
-        
-
-        
 
         window.addEventListener('resize', showButton);
 
         return(
-                
-                <nav className="NavbarItems">    
+
+                <nav className="NavbarItems">
                     <div className='navbar-container'>
                         <Link className="logo" to="/" onClick={closeMobileMenu}><h1 className="navbar-logo">Organic Care<i className="fas fa-leaf"></i></h1></Link>
                             <div className="menu-icon" onClick={handleClick}>
                                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
-                            </div> 
+                            </div>
                             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                                 <li>
                                     <Link className="nav-links" to="/" onClick={closeMobileMenu}>Home</Link>
@@ -59,7 +51,7 @@ function Navbar(props) {
                                 </li>
                                 <li>
                                     <Link className="nav-links" to="/Cotizacion" onClick={closeMobileMenu}>Cotizacion</Link>
-                               </li>
+                                </li>
                                 <li>
                                     <Link className="nav-links" to="/About" onClick={closeMobileMenu}>About</Link>
                                 </li>
@@ -71,13 +63,12 @@ function Navbar(props) {
                                 </li>
                             </ul>
 
-                         
-                                <div>                                 
-                                </div>
-                            
-                                 {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
 
-                            
+                                <div>
+                                </div>
+
+                                {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+
                     </div>
                 </nav>
         );

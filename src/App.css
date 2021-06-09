@@ -11,10 +11,13 @@
 /*Red Highlight :#B73225  */
 
 
+/*Red hover:#e97586*/
+
+
 /*Blue Minded :#004E7C  */
 
 
-/*Maroon 6: #591c0b  */
+/*Marron 5: #591c0b  */
 
 
 /*Grey Water: #5C5F58  */
@@ -60,6 +63,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-size: cover;
     overflow: hidden;
     background-color: #f2f0f0;
+    min-height: 700px;
     /*min-width: 600px;*/
 }
 
@@ -68,8 +72,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header__section {
-    margin-top: 34%;
-    height: 80vh;
+    margin-top: 30%;
+    height: 100%;
 }
 
 .navbar {
@@ -135,15 +139,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header__content {
-    display: flex;
+    display: block;
     align-items: center;
     color: #242424;
-    height: 100%;
-    margin-top: 10%;
+    margin-top: 74px;
 }
 
 .header__content2 {
-    display: flex;
+    display: block;
     align-items: center;
     color: #242424;
 }
@@ -205,9 +208,23 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .banner__img {
-    padding: 0 30px;
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     pointer-events: none;
+    height: 100%;
+}
+
+.banner__img img {
+    pointer-events: none;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .header__section .hello {
@@ -263,20 +280,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media screen and (max-width: 765px) {
-    .banner__img {
-        width: 100%;
-        padding: 0% 0% 0% 6%;
-        margin-top: 0px;
-        pointer-events: none;
-    }
-    .banner__img img {
-        width: 100%;
-    }
-    .contactSectionLogo img {
-        vertical-align: middle;
-        border-style: none;
-        width: 100%;
-    }
     .contactSectionLogo {
         width: 50%;
         margin: 0% 0% 10% 21%;
@@ -291,16 +294,21 @@ body::-webkit-scrollbar-thumb:hover {
         display: flex;
         margin: 0px 0px 0px 0px;
     }
-    .imageHeader {
-        text-align: center;
-    }
-    .banner__img {
-        margin: 0px auto;
-    }
     .header__content2 {
         margin: 0px auto;
     }
     .header__ul {
         margin: 0px auto;
+    }
+    .header__section h1 {
+        font-size: 48px;
+        font-weight: 550;
+        margin-bottom: 20px;
+    }
+    .header__section p {
+        font-size: 18px;
+        font-weight: 150;
+        line-height: 30px;
+        margin-bottom: 50px;
     }
 }
