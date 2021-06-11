@@ -1,17 +1,22 @@
 import React from 'react';
 import './textAnimated.css';
+import styled  from 'styled-components';
 
+const Tittle = styled.div`
+ color: ${props => props.theme.fontColor};
+ transition: all .5s ease;
+`;
 
 function HeaderTitle() {
     return (
         <div className="">
-            <h1 className="hello">Hello,</h1>
+            <Tittle>
+                <h1 className="hello">Hello,</h1>
+            </Tittle>
             <div className="wrapper">
-                <h1>I'M  Luis Esteban </h1>
-                {/*<ul className="dynamic-texts">
-                    <li><spam>Luis Esteban</spam></li>
-                    <li><spam>a devel oper</spam></li>
-    </ul>*/}
+                <Tittle>
+                    <h1>I'M  Luis Esteban</h1>
+                </Tittle> 
             </div>
         </div>
     )
