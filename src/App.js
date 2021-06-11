@@ -13,6 +13,7 @@ const LightTheme = {
   fontColor: "#282c36",
   tagLineColor: "black",
   iconsColor: '#242424',
+  boxShadow: '0 18px 12px rgb(0 0 0 / 19%);',
 };
 
 const DarkTheme = {
@@ -21,6 +22,7 @@ const DarkTheme = {
   fontColor: "white",
   tagLineColor: "lavender",
   iconsColor: 'white',
+  boxShadow: '0 18px 12px rgb(255 255 255 / 19%);',
 }
 
 const themes = {

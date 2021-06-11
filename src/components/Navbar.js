@@ -2,6 +2,7 @@ import React, { useState,  } from 'react';
 import {MenuItems} from './MenuItems';
 import './Navbar.css';
 import styled  from 'styled-components';
+import{ FaMoon} from "react-icons/fa";
 
 
 const Toggle = styled.button`
@@ -27,6 +28,9 @@ const NavbarC = styled.nav`
     background-color:${props => props.theme.pageBackground};
     color: ${props => props.theme.titleColor};
     transition: all .5s ease;
+`;
+const LabelDarkMode = styled.label`
+
 `;
 
 const AnchorTags = styled.a`
@@ -74,9 +78,13 @@ function Navbar (props) {
                             </li>
                         )
                         })}
-                        <Toggle onClick={changeTheme}>
-                        Dark mode
-                        </Toggle>
+                            <div>
+                                <FaMoon/>
+                                <label className="switch">
+                                    <input type="checkbox"/>
+                                    <span className="slider round" onClick={changeTheme}></span>
+                                </label>
+                            </div>
                 </ul>
             </nav>
         </NavbarC>

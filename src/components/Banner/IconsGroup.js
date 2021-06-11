@@ -1,5 +1,5 @@
 import React from 'react'
-import{FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub, FaEnvelope, } from "react-icons/fa";
+import{FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub, } from "react-icons/fa";
 import styled  from 'styled-components';
 
 const ColorIcons = styled.div`
@@ -8,6 +8,18 @@ list-style: none;
     margin: 0px 0px 0px 35%;
  color: ${props => props.theme.iconsColor};
  transition: all .5s ease;
+`;
+
+const LiContainer = styled.li`
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: ${props => props.theme.boxShadow};
+
 `
 
 function IconsGroup(props) {
@@ -15,21 +27,18 @@ function IconsGroup(props) {
         <div className="header__content2">
         <ul className="header__ul">
             <ColorIcons>
-                <li>
+                <LiContainer>
                     <FaFacebookF/>
-                </li>
-                <li>
+                </LiContainer>
+                <LiContainer>
                     <FaInstagram/>
-                </li>
-                <li>
+                </LiContainer>
+                <LiContainer>
                     <FaLinkedinIn/>
-                </li>
-                <li>
+                </LiContainer>
+                <LiContainer>
                     <FaGithub/>
-                </li>
-                <li>
-                    <FaEnvelope/>
-                </li>
+                </LiContainer>
             </ColorIcons>
             </ul>
     </div>
