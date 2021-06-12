@@ -1,0 +1,74 @@
+.containerr .cardDark {
+    color: white;
+    position: relative;
+    width: 286px;
+    height: 370px;
+    background: #393c43;
+    margin: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgb(206 198 198 / 39%);
+    transition: 0.5s;
+}
+
+.containerr:hover .cardDark {
+    filter: blur(0px);
+    transform: scale(0.9);
+    opacity: 9;
+}
+
+.containerr .cardDark:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.containerr .cardDark .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.containerr .cardDark .square {
+    position: relative;
+    width: 105%;
+    height: 100%;
+    text-align: center;
+}
+
+.containerr .cardDark .contentC {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.containerr .cardDark .contentC p {
+    color: #fff;
+    font-size: 13px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.containerr .cardDark .contentC a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #B73225;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: -7px;
+}
+
+.containerr .cardDark .contentC a:hover {
+    background: #c45061;
+    color: #fff;
+}
+
+.containerr .cardDark .contentC h4 {
+    margin-bottom: 4px;
+}

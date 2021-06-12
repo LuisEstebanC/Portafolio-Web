@@ -1,6 +1,8 @@
 import React from 'react';
 // import imgPlaceHolder from '../../assets/images/imgPlaceHolder.png';
 import './CardsStyle.css';
+import './CardsStyleDark.css'
+
 
 
 const CardsUI = (props) => {

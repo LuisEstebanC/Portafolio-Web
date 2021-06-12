@@ -14,6 +14,10 @@ const LightTheme = {
   tagLineColor: "black",
   iconsColor: '#242424',
   boxShadow: '0 18px 12px rgb(0 0 0 / 19%);',
+  inputBackgrounds: '#f3efef',
+  inputBorderBottom:'2px solid #b1a4a4',
+  inputBottomBackground:'',
+  tittleColorForm:'#B73225',
 };
 
 const DarkTheme = {
@@ -23,6 +27,10 @@ const DarkTheme = {
   tagLineColor: "lavender",
   iconsColor: 'white',
   boxShadow: '0 18px 12px rgb(255 255 255 / 19%);',
+  inputBackgrounds: '#40444b',
+  inputBorderBottom:'',
+  inputBottomBackground:'#B73225',
+  tittleColorForm:'#eb6d61',
 }
 
 const themes = {
@@ -38,7 +46,7 @@ function App() {
         <Navbar theme={theme} setTheme={setTheme}/>
         <div id='banner' ><Banner theme={theme}/> </div>
         <div id="about"><About /></div>
-        <div id="cards"><Cards /></div>
+        <div id="cards"  ><Cards theme={theme}/></div>
         <div  id="contact"><Contact/></div>
       </ThemeProvider>
   );

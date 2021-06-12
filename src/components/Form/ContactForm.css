@@ -29,27 +29,11 @@
     text-transform: uppercase;
 }
 
-.formContainer .form button {
-    width: 43%;
-    color: #B73225;
-    border-radius: 4px;
-    margin-left: 45%;
-    border: 2px solid #B73225;
-    text-decoration: none;
-    border-color: #B73225;
-    height: 44px;
-    box-shadow: 0 6px #999;
-}
+.formContainer .form button {}
 
-.formContainer .form button:hover {
-    color: white;
-    background-color: #B73225;
-}
+.formContainer .form button:hover {}
 
-.formContainer .form button:active {
-    box-shadow: 0 2px #666;
-    transform: translateY(4px);
-}
+.formContainer .form button:active {}
 
 .formContainer .form button i:hover {
     transform: translateY(-4px);
@@ -63,33 +47,10 @@
     margin-right: 58%;
 }
 
-.formContainer .form .Emaildiv p input {
-    width: 69%;
-    background-color: #f3efef;
-    box-sizing: border-box;
-    padding: 2px 7px;
-    border: none;
-    border-bottom: 2px solid #b1a4a4;
-}
+.formContainer .form .Emaildiv p input {}
 
-.formContainer .form .Emaildiv p input:focus {
-    border: none;
-    border-bottom: 2px solid #5a5a5a;
-    outline: none;
-}
+.formContainer .form .Emaildiv p input:focus {}
 
-.formContainer .form .messagediv p textarea {
-    width: 69%;
-    height: 55px;
-    border-radius: 5px;
-    resize: none;
-    box-sizing: border-box;
-    padding: 8px 7px;
-    background-color: #f3efef;
-    transition: height 0.4s ease-in-out;
-}
+.formContainer .form .messagediv p textarea {}
 
-.formContainer .form .messagediv p textarea:focus {
-    width: 69%;
-    height: 75px;
-}
+.formContainer .form .messagediv p textarea:focus {}

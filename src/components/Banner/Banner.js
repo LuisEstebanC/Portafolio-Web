@@ -4,7 +4,7 @@ import BannerImage from './BannerImage';
 import IconsGroup from './IconsGroup';
 import styled  from 'styled-components';
 
-const HeaderC = styled.nav`
+const HeaderC = styled.div`
     width: 100%;
     overflow: hidden;
     min-height: 700px;

@@ -1,33 +1,33 @@
 import React from 'react'
 import Icons from '../Banner/IconsGroup';
 import ContactForm from '../Form/ContactForm';
+import styled  from 'styled-components';
+
+const ContactC = styled.div`
+    padding: 10px 0;
+    background-color:${props => props.theme.pageBackground};
+    color: ${props => props.theme.titleColor};
+    transition: all .5s ease;
+`;
 
 const Contact = () => {
     return (
-        <div className="contact">
+        <ContactC>
             <div className="container">
                 <div className="contactSection">
                     <div className="row justifyconter">
-                           
-                            <div className="common">
-                            <div className="contactSectionLogo">
-                               {/* <img src="/images/logotipo.png" alt="Logo"/>*/ }
-                            </div>
-                            <ContactForm/>
-                                <div className="contactSectionText">
-                                   {/*  <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                    ex ea commodo consequat. 
-                                    </p>*/}
+                            <div className="common2">
+                                <div className="contactFormDiv">
+                                    <ContactForm/>
+                                </div>
+                                <div className="contacIconsDiv">
+                                    <Icons/>
                                 </div>
                             </div>
-                            <Icons/>  
-                    </div>   
+                    </div>
                 </div>
             </div>
-        </div>
+        </ContactC>
     )
 }
 
