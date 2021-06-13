@@ -12,15 +12,15 @@ const About = () => {
                 <div className="row">
                     <div className="col-12 col-md-6">
                         <div className="common">
-                            <h1 className="mainHeader">{header.subHeader}</h1>
-                            <p className="mainContent">{header.text}</p>
+                            <h1 data-aos="fade-up" className="mainHeader">{header.subHeader}</h1>
+                            <p data-aos="fade-up" className="mainContent">{header.text}</p>
                             <div className="commonBorder"></div>
                         </div>
                     </div>
                     <div className="col-12 col-md-6">
                         <div className="common">
-                            <h1 className="mainHeader">{header.subHeader}</h1>
-                            <p className="mainContent">{header.text}</p>
+                            <h1 data-aos="fade-up" className="mainHeader">{header.subHeader}</h1>
+                            <p data-aos="fade-up" className="mainContent">{header.text}</p>
                             <div className="commonBorder"></div>
                         </div>
                     </div>

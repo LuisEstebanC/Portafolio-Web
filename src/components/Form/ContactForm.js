@@ -4,7 +4,6 @@ import './ContactForm.css';
 import styled  from 'styled-components';
 
 const LabelForm = styled.label`
-    
     color: ${props => props.theme.fontColor};
     transition: all .5s ease;
 `;
@@ -86,7 +85,7 @@ function ContactForm() {
         return <PContainer>Thank you for contacting me, I will answer your message as soon as possible!</PContainer>;
     }
     return (
-        <div className="formContainer">
+        <div data-aos="zoom-in" className="formContainer">
             <div className="contact-wrapper animated bounceInUp">
                 <div className='form'>
                     <form onSubmit={handleSubmit}>

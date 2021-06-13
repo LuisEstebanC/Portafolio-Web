@@ -24,7 +24,7 @@ const LiContainer = styled.li`
 
 function IconsGroup(props) {
     return (
-        <div className="header__content2">
+        <div  className="header__content2">
         <ul className="header__ul">
             <ColorIcons>
                 <LiContainer>

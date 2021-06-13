@@ -1,6 +1,8 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import './textAnimated.css';
 import styled  from 'styled-components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Tittle = styled.div`
  color: ${props => props.theme.fontColor};
@@ -8,14 +10,19 @@ const Tittle = styled.div`
 `;
 
 function HeaderTitle() {
+
+    useEffect(() => {
+       Aos.init({duration: 2000});
+    }, []);
+
     return (
         <div className="">
             <Tittle>
-                <h1 className="hello">Hello,</h1>
+                <h1 data-aos="fade-left" className="hello">Hello,</h1>
             </Tittle>
             <div className="wrapper">
                 <Tittle>
-                    <h1>I'M  Luis Esteban</h1>
+                    <h1 data-aos="fade-left">I'M  Luis Esteban</h1>
                 </Tittle> 
             </div>
         </div>

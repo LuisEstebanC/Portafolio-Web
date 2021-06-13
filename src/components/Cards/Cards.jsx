@@ -35,7 +35,7 @@ function Cards (props){
                             <div className="row">
                                 <div className="col-12">
                                     <div className='common3'>
-                                        <h1 className="mainHeader2">Proyects</h1>
+                                        <h1 data-aos="fade-up-right" className="mainHeader2">Proyects</h1>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@ function Cards (props){
                             <div className="containerr">
                                     {CardsItem.map((item, index) => {
                                         return (
-                                                    <div className={props.theme === 'light'? "card" : "cardDark"} key={index}>
+                                                    <div data-aos="flip-right" data-aos-duration="1000" className={props.theme === 'light'? "card" : "cardDark"} key={index}>
                                                         <Card imgsrc={item.img} title={item.title} description={item.description} url={item.urlButton} alt={item.imageAlt} classNames={item.Style}/>
                                                     </div>
                                         )
