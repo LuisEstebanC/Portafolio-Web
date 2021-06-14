@@ -46,7 +46,7 @@ function Cards (props){
                                     {CardsItem.map((item, index) => {
                                         return (
                                                     <div data-aos="flip-right" data-aos-duration="1000" className={props.theme === 'light'? "card" : "cardDark"} key={index}>
-                                                        <Card imgsrc={item.img} title={item.title} description={item.description} url={item.urlButton} alt={item.imageAlt} classNames={item.Style}/>
+                                                        <Card imgsrc={item.img} title={item.title} description={item.description} url={item.urlButton} alt={item.imageAlt} classNames={item.Style} buttonContent={item.buttonContent}/>
                                                     </div>
                                         )
                                     })}

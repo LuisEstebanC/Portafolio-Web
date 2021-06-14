@@ -1,0 +1,36 @@
+.iconList {
+    padding: 3%;
+    color: white;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ulIcons {
+    display: flex;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+li {
+    padding: 0 14px;
+}
+
+.jsLogo:hover {
+    color: yellow;
+}
+
+.reactLogo:hover {
+    color: #61DBFB;
+}
+
+.htmlLogo:hover {
+    color: #f06529;
+}
+
+.cssLogo:hover {
+    color: #379ad6;
+}

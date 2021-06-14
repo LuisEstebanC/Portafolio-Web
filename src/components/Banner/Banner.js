@@ -11,6 +11,15 @@ const HeaderC = styled.div`
     background-color:${props => props.theme.pageBackground};
     color: ${props => props.theme.titleColor};
     transition: all .5s ease;
+    @media (min-height: 900px) {
+        min-height: 1000px;
+        .header .container {
+            margin-top: 9%;
+        }
+    }
+    @media (min-height: 760px) {
+        min-height: 1000px;
+    }
 `;
 
 const Banner = () => {

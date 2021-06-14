@@ -5,6 +5,7 @@ export const CardsItem = [{
         urlButton: 'https://github.com/LuisEstebanC/TodoListPHP',
         imageAlt: 'Todo List Image',
         Style: 'square',
+        buttonContent: 'View source code',
     },
     {
         img: 'https://i.postimg.cc/3xPm0NL3/Organic-Care.jpg',
@@ -13,6 +14,7 @@ export const CardsItem = [{
         urlButton: 'https://github.com/LuisEstebanC/OrganicCare',
         imageAlt: 'web Proyect',
         Style: 'square',
+        buttonContent: 'View source code',
     },
     {
         img: 'https://i.postimg.cc/XJMy8qS8/E-comerce9.jpg',
@@ -20,5 +22,6 @@ export const CardsItem = [{
         description: 'This ecommerce was a project in which I was in charge of the frontend of the page, I made the frontend of the page following the design of a mockup.',
         urlButton: 'https://github.com/LuisEstebanC/PF3',
         Style: 'square',
+        buttonContent: 'View source code',
     },
 ]

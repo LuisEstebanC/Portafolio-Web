@@ -4,20 +4,6 @@ import './Navbar.css';
 import styled  from 'styled-components';
 import{ FaMoon} from "react-icons/fa";
 
-
-// const Toggle = styled.button`
-//     cursor: pointer;
-//     height: 50px;
-//     width: 50px;
-//     border-radius: 50%;
-//     border: none;
-//     background-color:${props => props.theme.pageBackground};
-//     color: ${props => props.theme.titleColor};
-//     &:focus {
-//         outline: none;
-//     }
-//     transition: all .5s ease;
-// `;
 const NavbarC = styled.nav`
     width: 100%;
     height: 74px;
@@ -31,10 +17,10 @@ const NavbarC = styled.nav`
 `;
 
 const AnchorTags = styled.a`
-    text-decoration: none;
+    text-decoration: none!important;
     color: ${props => props.theme.titleColor};
     font-weight: 500;
-    font-size: 15PX;
+    font-size: 17PX;
     padding: 0 9PX;
     transition: all .5s ease;
 

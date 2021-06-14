@@ -30,15 +30,11 @@
 }
 
 .containerr:hover .card {
-    /* filter: blur(0px); */
     transform: scale(0.9);
-    /* opacity: 9; */
 }
 
 .containerr .card:hover {
-    /* filter: blur(0px); */
     transform: scale(1.1);
-    /* opacity: 1; */
 }
 
 .containerr .card .circle {

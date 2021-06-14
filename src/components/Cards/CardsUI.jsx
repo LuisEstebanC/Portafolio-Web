@@ -16,7 +16,7 @@ const CardsUI = (props) => {
                 <div className="contentC">
                     <h4 className="black-text">{props.title}</h4>
                     <p className="">{props.description}</p>
-                    <a href={props.url} target="_blank" rel="noreferrer">View source code</a>
+                    <a href={props.url} target="_blank" rel="noreferrer">{props.buttonContent}</a>
                 </div>
         </div>
     );
