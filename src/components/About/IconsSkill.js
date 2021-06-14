@@ -10,17 +10,39 @@ export default function IconsSkill(){
 
                 <div data-aos="fade-up" className="iconList">
                     <ul className="ulIcons">
-                        <li className="jsLogo"><IoLogoJavascript size={60}/></li>
-                        <li className="reactLogo"><IoLogoReact size={60}/></li>
-                        <li className="htmlLogo"><IoLogoHtml5 size={60}/></li>
-                        <li className="cssLogo"><IoLogoCss3 size={60}/></li>
-                        <li className="cssLogo"><DiJava size={60}/></li>
-                        <li className="cssLogo"><SiCsharp size={60}/></li>
-                        <li className="cssLogo"><DiAndroid size={60}/></li>
-                        <li className="cssLogo"><DiPhp size={60}/></li>
-                        <li className="cssLogo"><DiMsqlServer size={60}/></li>
-                        <li className="cssLogo"><DiMysql size={60}/></li>
-                        <li className="cssLogo"><DiSqllite size={60}/></li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank">
+                            <li className="jsLogo"><IoLogoJavascript size={60}/></li>
+                        </a>
+                        <a href="https://reactjs.org/" target="blank">
+                            <li className="reactLogo"><IoLogoReact size={60}/></li>
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/html" target="blank">
+                            <li className="htmlLogo"><IoLogoHtml5 size={60}/></li>
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/css" target="blank">
+                            <li className="cssLogo"><IoLogoCss3 size={60}/></li>
+                        </a>
+                        <a href="https://java.com/download/help/whatis_java.html" target="blank">
+                            <li className="javaLogo"><DiJava size={60}/></li>
+                        </a>
+                        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/" target="blank">
+                            <li className="csharpLogo"><SiCsharp size={60}/></li>
+                        </a>
+                        <a href="https://developer.android.com/" target="blank">
+                            <li className="androidLogo"><DiAndroid size={60}/></li>
+                        </a>
+                        <a href="https://www.php.net/docs.php" target="blank">
+                            <li className="phpLogo"><DiPhp size={60}/></li>
+                        </a>
+                        <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="blank">
+                            <li className="SqlServerLogo"><DiMsqlServer size={60}/></li>
+                        </a>
+                        <a href="https://www.mysql.com/" target="blank">
+                            <li className="mySqlLogo"><DiMysql size={60}/></li>
+                        </a>
+                        <a href="https://www.sqlite.org/index.html" target="blank">
+                            <li className="sqlLiteLogo"><DiSqllite size={60}/></li>
+                        </a>
                     </ul>
                 </div>
     </>)

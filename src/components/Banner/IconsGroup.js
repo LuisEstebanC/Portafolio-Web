@@ -27,18 +27,26 @@ function IconsGroup(props) {
         <div  className="header__content2">
         <ul className="header__ul">
             <ColorIcons>
-                <LiContainer>
-                    <FaFacebookF/>
-                </LiContainer>
-                <LiContainer>
-                    <FaInstagram/>
-                </LiContainer>
-                <LiContainer>
-                    <FaLinkedinIn/>
-                </LiContainer>
-                <LiContainer>
-                    <FaGithub/>
-                </LiContainer>
+                <a className="anchorIcons" href="https://www.facebook.com/luiss2030" target="blank">
+                    <LiContainer>
+                        <FaFacebookF/>
+                    </LiContainer>
+                </a>
+                <a className="anchorIcons" href="https://www.instagram.com/luis_09_29/" target="blank">
+                    <LiContainer>
+                        <FaInstagram/>
+                    </LiContainer>
+                </a>
+                <a className="anchorIcons" href="https://www.linkedin.com/in/luis-capellan-332a471b6/" target="blank">
+                    <LiContainer>
+                        <FaLinkedinIn/>
+                    </LiContainer>
+                </a>
+                <a className="anchorIcons" href="https://github.com/LuisEstebanC" target="blank">
+                    <LiContainer>
+                        <FaGithub/>
+                    </LiContainer>
+                </a>
             </ColorIcons>
             </ul>
     </div>

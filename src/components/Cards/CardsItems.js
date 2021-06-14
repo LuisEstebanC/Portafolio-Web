@@ -1,9 +1,9 @@
 export const CardsItem = [{
-        img: "https://i.postimg.cc/NMznRgmB/Todo-List1.jpg",
+        img: "https://i.postimg.cc/SxD3rhwg/connection-Manager.jpg",
         title: 'Todo List with PHP',
-        description: 'This project is a todo list made in php using ajax technology and the sweetalert library to make it a bit more user friendly.',
-        urlButton: 'https://github.com/LuisEstebanC/TodoListPHP',
-        imageAlt: 'Todo List Image',
+        description: 'This project is a database connection manager, where you enter the pertinent data and this application will test the connection and if the data is correct or the connection exists, it will return a success alert, otherwise an error alert.',
+        urlButton: 'https://github.com/LuisEstebanC/Connections-Mamager',
+        imageAlt: 'Connection Manager',
         Style: 'square',
         buttonContent: 'View source code',
     },

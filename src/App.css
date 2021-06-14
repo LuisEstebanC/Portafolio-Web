@@ -281,3 +281,11 @@ body::-webkit-scrollbar-thumb:hover {
         margin-bottom: 50px;
     }
 }
+
+.anchorIcons:hover {
+    color: inherit;
+}
+
+.anchorIcons {
+    color: inherit;
+}

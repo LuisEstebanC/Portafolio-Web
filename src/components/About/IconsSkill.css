@@ -6,6 +6,14 @@
     text-align: center;
 }
 
+a {
+    color: white;
+}
+
+a:hover {
+    color: inherit;
+}
+
 .ulIcons {
     display: flex;
     grid-template-columns: repeat(6, auto);
@@ -33,4 +41,32 @@ li {
 
 .cssLogo:hover {
     color: #379ad6;
+}
+
+.javaLogo :hover {
+    color: #379ad6;
+}
+
+.csharpLogo :hover {
+    color: #953dac
+}
+
+.androidLogo:hover {
+    color: #75bc54
+}
+
+.phpLogo:hover {
+    color: #7377ad
+}
+
+.SqlServerLogo:hover {
+    color: #b21a1a
+}
+
+.mySqlLogo :hover {
+    color: #379ad6;
+}
+
+.sqlLiteLogo :hover {
+    color: #125680;
 }
