@@ -2,7 +2,7 @@ import React from 'react'
 import './IconsSkill.css';
 
 import {IoLogoHtml5,IoLogoCss3,IoLogoJavascript,IoLogoReact } from 'react-icons/io5';
-import { DiMsqlServer,DiMysql,DiSqllite, DiPhp,DiJava, DiAndroid } from "react-icons/di";
+import { DiMsqlServer,DiMysql, DiPhp,DiJava, DiAndroid } from "react-icons/di";
 import { SiCsharp } from "react-icons/si";
 
 export default function IconsSkill(){
@@ -39,9 +39,6 @@ export default function IconsSkill(){
                         </a>
                         <a href="https://www.mysql.com/" target="blank">
                             <li className="mySqlLogo"><DiMysql size={60}/></li>
-                        </a>
-                        <a href="https://www.sqlite.org/index.html" target="blank">
-                            <li className="sqlLiteLogo"><DiSqllite size={60}/></li>
                         </a>
                     </ul>
                 </div>

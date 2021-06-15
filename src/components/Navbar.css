@@ -1,7 +1,7 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(10, auto);
-    grid-gap: 10px;
+    grid-gap: 3px;
     list-style: none;
     text-align: center;
     width: 75vw;
@@ -183,7 +183,7 @@ input:checked+.slider:before {
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(-100%, 60%);
+        transform: translate(-27%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
     }

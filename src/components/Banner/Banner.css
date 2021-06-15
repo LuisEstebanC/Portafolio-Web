@@ -1,0 +1,22 @@
+.imageHeader {
+    width: 50%;
+}
+
+.contentHeader {
+    width: 50%;
+}
+
+@media screen and (max-width: 990px) {
+    .imageHeader {
+        width: 0%;
+    }
+    .contentHeader {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contentHeader {
+        padding: 4%;
+    }
+}
