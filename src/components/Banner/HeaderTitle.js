@@ -2,6 +2,7 @@ import React,{useEffect} from 'react';
 import styled  from 'styled-components';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import './Banner.css'
 
 const Tittle = styled.div`
  color: ${props => props.theme.fontColor};

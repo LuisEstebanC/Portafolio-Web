@@ -13,6 +13,9 @@
     .contentHeader {
         width: 100%;
     }
+    .hello {
+        font-size: 10vw;
+    }
 }
 
 @media screen and (max-width: 576px) {

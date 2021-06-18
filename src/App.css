@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb:hover {
     justify-content: center;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 990px) {
     .contactSectionLogo {
         width: 50%;
         margin: 0% 0% 10% 21%;
@@ -270,7 +270,7 @@ body::-webkit-scrollbar-thumb:hover {
         margin: 0px auto;
     }
     .header__section h1 {
-        font-size: 48px;
+        font-size: 6vw;
         font-weight: 550;
         margin-bottom: 20px;
     }
@@ -279,6 +279,14 @@ body::-webkit-scrollbar-thumb:hover {
         font-weight: 150;
         line-height: 30px;
         margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .header__content2 .header__ul {
+        list-style: none;
+        display: flex;
+        margin: 0% 10% 0% 0%;
     }
 }
 
