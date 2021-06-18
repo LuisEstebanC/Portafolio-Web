@@ -13,13 +13,13 @@ const HeaderC = styled.div`
     color: ${props => props.theme.titleColor};
     transition: all .5s ease;
     @media (min-height: 900px) {
-        min-height: 1000px;
+        height: 100vh;
         .header .container {
             margin-top: 9%;
         }
     }
     @media (min-height: 760px) {
-        min-height: 1000px;
+        height: 100vh;
     }
 `;
 
