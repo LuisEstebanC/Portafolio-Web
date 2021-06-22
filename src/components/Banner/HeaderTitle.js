@@ -6,13 +6,14 @@ import './Banner.css'
 
 const Tittle = styled.div`
  color: ${props => props.theme.fontColor};
- transition: all .5s ease;
+ transition: all .2s ease;
 `;
 
 function HeaderTitle() {
 
     useEffect(() => {
        Aos.init({duration: 2000});
+       Aos.refresh();
     }, []);
 
     return (

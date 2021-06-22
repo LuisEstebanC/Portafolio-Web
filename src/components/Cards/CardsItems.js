@@ -1,6 +1,6 @@
 export const CardsItem = [{
         img: "https://i.postimg.cc/SxD3rhwg/connection-Manager.jpg",
-        title: 'Todo List with PHP',
+        title: 'Connection manager',
         description: 'This project is a database connection manager, where you enter the pertinent data and this application will test the connection and if the data is correct or the connection exists, it will return a success alert, otherwise an error alert.',
         urlButton: 'https://github.com/LuisEstebanC/Connections-Mamager',
         imageAlt: 'Connection Manager',

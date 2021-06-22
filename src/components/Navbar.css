@@ -195,4 +195,7 @@ input:checked+.slider:before {
         color: #B73225;
         font-size: 2rem;
     }
+    .darkModeContaienr {
+        margin-top: 3%;
+    }
 }

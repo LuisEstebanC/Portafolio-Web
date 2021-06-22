@@ -1,4 +1,4 @@
-import React, { useState,  } from 'react';
+import React, { useState, useEffect } from 'react';
 import {MenuItems} from './MenuItems';
 import './Navbar.css';
 import styled  from 'styled-components';
@@ -31,6 +31,34 @@ const AnchorTags = styled.a`
 function Navbar (props) {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
+    const [moonSize, setMoonSize] = useState(20);
+
+    const [pageSize, setPageSize] = useState(0);
+
+    
+    
+    const changeMoon = (pageSize) =>{
+        if(pageSize <= 960) {
+            setMoonSize(35);
+        } else{
+            setMoonSize(20);
+        }
+    }
+    const updateSize =() =>{
+        setPageSize(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', updateSize);
+        
+        changeMoon(pageSize);
+        return ()=>{
+            window.removeEventListener('resize', updateSize);
+            changeMoon(pageSize);
+        };
+    }, [pageSize]);
+
+
 
     function changeTheme(){
         if(props.theme === 'light'){
@@ -61,8 +89,8 @@ function Navbar (props) {
                             </li>
                         )
                         })}
-                            <div>
-                                <FaMoon/>
+                            <div className="darkModeContaienr">
+                                <FaMoon size={moonSize}/>
                                 <label className="switch">
                                     <input type="checkbox"/>
                                     <span className="slider round" onClick={changeTheme}></span>

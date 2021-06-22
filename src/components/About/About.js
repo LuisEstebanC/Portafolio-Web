@@ -18,7 +18,6 @@ const About = () => {
                             <div className="commonBorder"></div>
                         </div>
                     </div>
-                    <Icons  />
                     {/* <div className="col-12 col-md-6">
                         <div className="common">
                             <h1 data-aos="fade-up" className="mainHeader">{header.subHeader}</h1>
@@ -27,6 +26,7 @@ const About = () => {
                         </div>
                     </div> */}
                 </div>
+                <Icons/>
             </div>
         </div>
     )

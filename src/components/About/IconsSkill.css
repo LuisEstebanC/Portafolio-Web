@@ -1,10 +1,47 @@
-.iconList {
-    padding: 3%;
+.iconsContent {
+    width: 100%;
+}
+
+.containerIco {
+    list-style: none;
+    padding: 0;
+}
+
+.item {
+    padding: 5px;
+    width: 90px;
+    height: 80px;
+    margin: 6px;
+    text-align: center;
+    justify-content: center;
+}
+
+.float {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.float:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.float-item {
+    float: left;
+}
+
+
+/* .iconList {
+    width: 100%;
+    padding: 3% 0% 0% 0%;
     color: white;
     list-style: none;
     overflow: hidden;
     text-align: center;
-}
+} */
 
 a {
     color: white;
@@ -14,18 +51,21 @@ a:hover {
     color: inherit;
 }
 
-.ulIcons {
+
+/* .ulIcons {
     display: flex;
     grid-template-columns: repeat(6, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 100%;
-}
+} */
 
+
+/* 
 li {
     padding: 0 14px;
-}
+} */
 
 .jsLogo:hover {
     color: yellow;
