@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLayoutEffect  } from 'react';
 import {MenuItems} from './MenuItems';
 import './Navbar.css';
 import styled  from 'styled-components';
@@ -27,16 +27,13 @@ const AnchorTags = styled.a`
 `;
 
 
-
 function Navbar (props) {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const [moonSize, setMoonSize] = useState(20);
 
-    const [pageSize, setPageSize] = useState(0);
+    const [pageSize, setPageSize] = useState(window.innerWidth);
 
-    
-    
     const changeMoon = (pageSize) =>{
         if(pageSize <= 960) {
             setMoonSize(35);
@@ -47,17 +44,14 @@ function Navbar (props) {
     const updateSize =() =>{
         setPageSize(window.innerWidth)
     }
-
     useEffect(() => {
         window.addEventListener('resize', updateSize);
-        
         changeMoon(pageSize);
         return ()=>{
             window.removeEventListener('resize', updateSize);
             changeMoon(pageSize);
         };
     }, [pageSize]);
-
 
 
     function changeTheme(){
