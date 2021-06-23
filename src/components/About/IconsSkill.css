@@ -3,11 +3,17 @@
 }
 
 .containerIco {
+    /* list-style: none;
+    padding: 0; */
+    display: grid;
+    grid-gap: 1rem;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
     list-style: none;
-    padding: 0;
 }
 
 .item {
+    grid-column: span 2;
     padding: 5px;
     width: 90px;
     height: 80px;
@@ -16,7 +22,8 @@
     justify-content: center;
 }
 
-.float {
+
+/* .float {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -31,7 +38,7 @@
 
 .float-item {
     float: left;
-}
+} */
 
 
 /* .iconList {
