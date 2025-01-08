@@ -6,13 +6,13 @@ export const MenuItems = [
         onclick: 'handleClick',
     },
     {
-        title: 'Proyects',
-        href: '#cards',
+        title: 'About',
+        href: '#about',
         onclick: 'handleClick',
     },
     {
-        title: 'About',
-        href: '#about',
+        title: 'Proyects',
+        href: '#cards',
         onclick: 'handleClick',
     },
     {
